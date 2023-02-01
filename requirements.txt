@@ -5,13 +5,15 @@ torchaudio==0.13.1+cu117
 torchvision==0.14.1+cu117
 
 # Install others
+numpy==1.24.1
+Pillow==9.4.0
 pandas==1.5.3
+scikit-learn==1.2.1
 scipy==1.10.0
 tensorboardX==2.5.1
-scikit-learn==1.2.1
 
 # Install for old scipy.misc
 scipy-pilutil==0.1.1
 
-# Install for demo visialize
+# Install for demo visializing
 matplotlib==3.6.3
