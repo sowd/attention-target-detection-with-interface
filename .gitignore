@@ -8,3 +8,6 @@ data/gazefollow
 data/videoatttarget
 *.pt
 *.pyc
+
+venv/
+output/

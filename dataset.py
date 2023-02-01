@@ -12,7 +12,7 @@ import matplotlib as mpl
 mpl.use('Agg')
 from matplotlib import cm
 import matplotlib.pyplot as plt
-from scipy.misc import imresize
+from scipy_pilutil import imresize
 
 import os
 import glob

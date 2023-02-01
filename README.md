@@ -1,6 +1,15 @@
 # CVPR 2020 - Detecting Attended Visual Targets in Video
 ![](misc/teaser.gif)
 
+
+## Memo
+- Modified for `Python 3.10` and `cuda 11.7`
+- I used `nvidia/cuda:11.7.0-cudnn8-devel-ubuntu22.04` docker container
+- It needs `g++`, `make`, `cmake`
+- conda environment was broken, so I used pip requirements.
+- Resolved old functions removed from `scipy.misc` and `matplotlib`
+
+
 ## Overview
 This repo provides PyTorch implementation of our paper:
 **'Detecting Attended Visual Targets in Video'**  [[paper]](https://arxiv.org/abs/2003.02501)

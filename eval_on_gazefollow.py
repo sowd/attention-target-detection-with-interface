@@ -10,7 +10,7 @@ from utils import imutils, evaluation
 import argparse
 import os
 import numpy as np
-from scipy.misc import imresize
+from scipy_pilutil import imresize
 import warnings
 
 warnings.simplefilter(action='ignore', category=FutureWarning)

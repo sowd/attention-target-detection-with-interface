@@ -1,0 +1,17 @@
+# Install torch
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.13.1+cu117
+torchaudio==0.13.1+cu117
+torchvision==0.14.1+cu117
+
+# Install others
+pandas==1.5.3
+scipy==1.10.0
+tensorboardX==2.5.1
+scikit-learn==1.2.1
+
+# Install for old scipy.misc
+scipy-pilutil==0.1.1
+
+# Install for demo visialize
+matplotlib==3.6.3

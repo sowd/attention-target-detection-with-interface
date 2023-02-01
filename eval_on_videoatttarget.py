@@ -12,7 +12,7 @@ from lib.pytorch_convolutional_rnn import convolutional_rnn
 import argparse
 import os
 import numpy as np
-from scipy.misc import imresize
+from scipy_pilutil import imresize
 import warnings
 
 warnings.simplefilter(action='ignore', category=FutureWarning)

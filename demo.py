@@ -9,11 +9,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from PIL import Image
-from scipy.misc import imresize
+from scipy_pilutil import imresize
 
 from model import ModelSpatial
 from utils import imutils, evaluation
 from config import *
+
+from itertools import count
 
 
 parser = argparse.ArgumentParser()
@@ -54,6 +56,7 @@ def run():
     model.cuda()
     model.train(False)
 
+    cnt = count()
     with torch.no_grad():
         for i in df.index:
             frame_raw = Image.open(os.path.join(args.image_dir, i))
@@ -87,7 +90,7 @@ def run():
             # vis
             plt.close()
             fig = plt.figure()
-            fig.canvas.manager.window.move(0,0)
+            #fig.canvas.manager.window.move(0,0)
             plt.axis('off')
             plt.imshow(frame_raw)
 
@@ -105,8 +108,9 @@ def run():
             else:
                 plt.imshow(norm_map, cmap = 'jet', alpha=0.2, vmin=0, vmax=255)
 
-            plt.show(block=False)
-            plt.pause(0.2)
+            #plt.show(block=False)
+            #plt.pause(0.2)
+            plt.savefig(f'output/{next(cnt):04}.png')
 
         print('DONE!')
 

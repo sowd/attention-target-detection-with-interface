@@ -12,7 +12,7 @@ import os
 from datetime import datetime
 import shutil
 import numpy as np
-from scipy.misc import imresize
+from scipy_pilutil import imresize
 from tensorboardX import SummaryWriter
 import warnings
 
