@@ -4,10 +4,11 @@
 
 ## Memo
 - Modified for `Python 3.10` and `cuda 11.7`
-- I used `nvidia/cuda:11.7.0-cudnn8-devel-ubuntu22.04` docker container
+- I used `nvidia/cuda:11.7.1-cudnn8-devel-ubuntu22.04` docker container
 - ~~It needs `g++`, `make`, `cmake`~~ Unused
 - conda environment was broken, so I used pip requirements.
 - Resolved old functions removed from `scipy.misc` and `matplotlib`
+- Created Dockerfile
 
 
 ## Overview
