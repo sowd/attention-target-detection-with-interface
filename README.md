@@ -2,7 +2,7 @@
 ![](misc/teaser.gif)
 
 
-## Memo
+## Notes
 - Modified for `Python 3.10` and `cuda 11.7`
 - I used `nvidia/cuda:11.7.1-cudnn8-devel-ubuntu22.04` docker container
 - ~~It needs `g++`, `make`, `cmake`~~ Unused
