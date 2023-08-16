@@ -13,13 +13,29 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 WORKDIR /root
 
 RUN git clone --depth=1 \
-    https://github.com/kairi003/attention-target-detection.git \
+    https://github.com/sowd/attention-target-detection-with-interface.git \
     attention-target-detection_repo
 
 WORKDIR /root/attention-target-detection_repo
 
 RUN pip install -r requirements.txt
 
-# sh download_models.sh
+RUN sh download_models.sh
 # mkdir output
 # python3 demo.py
+
+#########################################################
+### original settings
+
+## Face detection modules
+WORKDIR /root
+RUN git clone https://github.com/VarCode-ai/yolox-face-detection.git
+WORKDIR /root/yolox-face-detection
+RUN apt update
+RUN apt install -y cmake
+RUN pip3 install -r requirements.txt
+
+
+
+RUN apt update
+RUN apt install -y inotify-tools
